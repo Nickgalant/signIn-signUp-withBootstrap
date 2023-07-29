@@ -5,19 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container rounded shadow">
-        <div class="container g-3 d-flex flex-row">
-            <form>
-                <legend>Realize o seu cadastro</legend>
-
-                <!-- continuar projeto  -->
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
-            <img src="./img/hello.svg">
+    <div class="container col-11 col-md-9" id="form-container">
+        <div class="row gx-5">
+            <div class="col-md-6">
+                <h2>Realize o seu cadastro</h2>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Digite o seu nome">
+                        <label for="name" class="form-label">Digite o seu nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Digite o seu sobrenome">
+                        <label for="lastname" class="form-label">Digite o seu sobrenome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu e-mail">
+                        <label for="email" class="form-label">Digite o seu e-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Digite a sua senha">
+                        <label for="password" class="form-label">Digite a sua senha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Confirme a sua senha">
+                        <label for="confirmpassword" class="form-label">Confirme a sua senha</label>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check mb-2">
+                            <input type="checkbox" name="agree-form" id="agree-form" class="form-check-input">
+                            <label for="agree-form" class="form-check-label">Você aceita os <a href="#">termos de serviço</a>?</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" name="newsletter" id="newsletter" class="form-check-input" checked>
+                            <label for="newsletter" class="form-check-label">Deseja receber as nossas Newsletter</label>
+                        </div>
+                        <input type="submit" value="Cadastrar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <img src="/img/hello.svg" alt="Tela de Registro" class="img-fluid">
+                    </div>
+                    <div class="col-12" id="link-container">
+                        <a href="login.html">Eu já tenho uma conta</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="#login.html">Eu já tenho uma conta</a>
     </div>
 </body>
 </html>
